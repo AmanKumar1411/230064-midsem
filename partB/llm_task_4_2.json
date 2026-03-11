@@ -1,0 +1,51 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 4.2",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Repository organization and requirements setup",
+      "prompt": "Help me organize the repository structure for the DPM Part B submission. Create data/, results/ directories, requirements.txt with CPU-only packages, and ensure all notebooks reference consistent paths.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Verified all notebook save paths use relative references to results/ and data/. Removed version pins from requirements.txt for portability."
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Generate LLM disclosure JSON files",
+      "prompt": "Create the 10 LLM usage JSON files (llm_task_1_1.json through llm_task_4_2.json) following the required schema with student_metadata, task_tag, llm_tools_used, full_llm_interaction_log, top_5_prompts, and student_declaration.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Customized each JSON to reflect actual prompts and modifications made per task. Ensured student_modification fields accurately describe changes made to LLM-suggested code."
+    }
+  ],
+
+  "top_5_prompts": [
+    "Set up a Python project with data/ and results/ directories for DPM reproduction.",
+    "What packages do I need in requirements.txt for sklearn, matplotlib, seaborn, numpy, pandas?",
+    "Create the LLM usage disclosure JSON files following the exam schema.",
+    "How should I organize notebooks and supporting files for reproducibility?",
+    "Ensure all notebooks save outputs to a consistent results/ directory."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

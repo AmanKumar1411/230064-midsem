@@ -1,0 +1,43 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 1.1",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Generate step-by-step walkthrough of DPM pipeline from input to detection",
+      "prompt": "Explain the method step-by-step from input image to final detection output for the DPM paper by Felzenszwalb et al. 2010. Cover feature pyramid, root filter, part filter, deformation, Latent SVM, hard negative mining, and final detection. Reference specific sections and equations.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Verified all section and equation references against the actual paper. Restructured the explanation for clarity and added the summary comparing DPM to prior methods."
+    }
+  ],
+
+  "top_5_prompts": [
+    "Explain the DPM pipeline step-by-step from input image to detection output, referencing paper sections.",
+    "What is the role of the feature pyramid in the DPM and how does it relate to HOG features (Section 2)?",
+    "Explain the deformation cost function from Equation 3 and why it uses a quadratic penalty.",
+    "How does the Latent SVM training from Section 4 handle part positions as latent variables?",
+    "Summarize what problem DPM solves and why it improves over rigid HOG detectors."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

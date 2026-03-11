@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-Score
+Rigid (Root-Only),0.63,0.7097,0.44,0.5432
+Part-Based (DPM),1.0,1.0,1.0,1.0
+DPM + Hard Neg Mining,1.0,1.0,1.0,1.0

@@ -1,0 +1,51 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 3.2",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Design failure mode experiment with bimodal deformation",
+      "prompt": "Design a failure mode for the DPM where deformation features follow a bimodal distribution (two modes of deformation). Explain why a single Gaussian deformation penalty would fail here.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Implemented bimodal deformation by mixing two Gaussians with means at ±1.5 and std 0.4. Added visualization of the deformation distribution and misclassification analysis."
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Generate failure mode analysis plots",
+      "prompt": "Visualize the failure mode: dataset scatter plot, confusion matrix, and analysis of which samples are misclassified and why.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Added histogram of deformation values for TP/FP/FN cases. Saved all plots to results/ with failure_ prefix."
+    }
+  ],
+
+  "top_5_prompts": [
+    "What are known failure modes of the DPM's quadratic deformation penalty?",
+    "How do I generate bimodal deformation features using a mixture of Gaussians?",
+    "Why does a single Gaussian assumption for deformation fail with multimodal part placement?",
+    "Visualize misclassified samples in a deformation-space scatter plot.",
+    "Create histogram comparison of deformation magnitudes for TP, FP, and FN predictions."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 2.3",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Set up evaluation metrics and confusion matrices for all three models",
+      "prompt": "Evaluate three models (rigid SVM, DPM, DPM+HNM) on the test set. Show accuracy, precision, recall, F1 for each. Generate confusion matrices side by side.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Added ROC-AUC computation and ROC curve plotting. Changed confusion matrix visualization to use seaborn heatmap with annotated counts."
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Compare our results with paper claims",
+      "prompt": "Create a table comparing our toy-dataset results with the DPM paper's PASCAL VOC results. Include a discussion of expected differences due to dataset simplicity.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Added markdown discussion cells explaining why our results diverge from the paper (synthetic vs real data, simplified feature space). Added prediction visualization scatter plot."
+    }
+  ],
+
+  "top_5_prompts": [
+    "How do I compute precision, recall, F1, and ROC-AUC for multi-model comparison?",
+    "Plot confusion matrices for three classifiers side by side using seaborn heatmap.",
+    "Generate ROC curves comparing rigid SVM, DPM, and DPM+HNM on test data.",
+    "How should our toy-dataset results compare to Table 1 in the DPM paper (PASCAL VOC 2007)?",
+    "Create a scatter plot of predictions colored by true vs predicted class for error analysis."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

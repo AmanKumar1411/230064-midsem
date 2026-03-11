@@ -1,0 +1,43 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 1.2",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Identify key assumptions of the DPM paper with violation scenarios",
+      "prompt": "Identify at least three assumptions specific to the DPM paper (Felzenszwalb et al. 2010). For each, explain why the method requires it, give a concrete violation scenario, and cite the paper section.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Added a fourth assumption (bounding box annotation reliability). Cross-checked all paper references and rewrote violation scenarios to be more concrete and exam-appropriate."
+    }
+  ],
+
+  "top_5_prompts": [
+    "What assumptions does the DPM star-structured model make about part spatial relationships?",
+    "Why does the DPM assume HOG features are sufficient? When would this fail?",
+    "Explain the small deformation assumption implied by the quadratic penalty in Equation 3.",
+    "How does the Latent SVM training depend on bounding box annotation quality?",
+    "Give a concrete scenario where the star topology assumption of the DPM is violated."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

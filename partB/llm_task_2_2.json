@@ -1,0 +1,59 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 2.2",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Implement rigid baseline SVM and DPM-inspired model",
+      "prompt": "Implement a rigid baseline using LinearSVC on root features only, then a DPM-inspired model that uses root, part, and deformation features (including quadratic deformation cost terms). Show both training pipelines.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Rewrote the feature engineering pipeline to compute quadratic deformation terms (dx^2, dy^2) and combined them with original features. Changed hard negative mining to use the actual SVM decision function for misclassified negatives."
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Implement hard negative mining loop",
+      "prompt": "Implement hard negative mining for LinearSVC: identify false positives from the training set, add them to the training pool with higher emphasis, and retrain. Iterate 3 rounds.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Adjusted the mining threshold to 0.0 (margin boundary), limited max hard negatives per round, and added train/val score tracking per round."
+    },
+    {
+      "interaction_id": 3,
+      "purpose": "Generate weight visualization and score decomposition plots",
+      "prompt": "Create visualizations comparing learned weights across features for each model, and a score decomposition showing root, part, and deformation score contributions.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Added grouped bar charts for weight comparison, used horizontal bar decomposition for score components, and saved all to results/."
+    }
+  ],
+
+  "top_5_prompts": [
+    "Implement a rigid SVM baseline using only root (HOG) features with LinearSVC.",
+    "How do I add quadratic deformation cost features to simulate the DPM scoring function?",
+    "Implement hard negative mining on top of a trained LinearSVC for DPM-style training.",
+    "How many hard negative mining iterations are typical, and what threshold should I use?",
+    "Visualize SVM weight vectors grouped by root, part, and deformation feature blocks."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

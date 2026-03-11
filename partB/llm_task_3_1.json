@@ -1,0 +1,51 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 3.1",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Design ablation study removing part and deformation features",
+      "prompt": "Design an ablation study for DPM with these variants: (1) root-only, (2) root+parts (no deformation), (3) root+deformation (no part appearance), (4) full DPM. Explain what each ablation tests scientifically.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Reduced to three ablation variants (root-only, no-deformation, full DPM) for clarity. Added per-variant confusion matrices and a grouped bar chart comparing accuracy/F1."
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Generate ablation comparison plots",
+      "prompt": "Create a grouped bar chart showing accuracy and F1 for each ablation variant, and side-by-side confusion matrices. Save to results/.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Changed to seaborn-styled plots, added error metric annotations, saved CSV summary alongside PNGs."
+    }
+  ],
+
+  "top_5_prompts": [
+    "What ablation experiments make sense for the DPM scoring function?",
+    "How do I selectively zero-out feature groups in a trained SVM to simulate ablation?",
+    "Why is the deformation penalty important for DPM according to the paper?",
+    "Create grouped bar charts comparing ablation variants on accuracy and F1.",
+    "Generate confusion matrices for each ablation variant side by side."
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

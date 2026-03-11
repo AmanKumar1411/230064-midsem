@@ -1,0 +1,51 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 2.1",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Design toy dataset that mirrors DPM feature structure",
+      "prompt": "Design a synthetic dataset using sklearn.datasets.make_classification that can demonstrate the DPM concept. The dataset should have root features, part features, and deformation features. Explain suitability and limitations vs PASCAL VOC.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Changed deformation generation to use class-dependent standard deviations (0.3 for positives, 1.5 for negatives) to better simulate the DPM deformation penalty. Added visualization code and dataset saving logic."
+    },
+    {
+      "interaction_id": 2,
+      "purpose": "Generate dataset visualization code",
+      "prompt": "Write matplotlib code to visualize root features, part features, and deformation features in a 1x3 subplot layout, colored by class label.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Adjusted figure size, added labels, and added savefig call to results/ directory."
+    }
+  ],
+
+  "top_5_prompts": [
+    "Design a synthetic dataset with root, part, and deformation feature groups mirroring the DPM.",
+    "How should deformation features differ between positive and negative classes to simulate DPM?",
+    "What are the limitations of a toy classification dataset versus PASCAL VOC for DPM evaluation?",
+    "Write matplotlib code to visualize the dataset feature groups colored by class.",
+    "What parameters should make_classification use for a DPM-analog dataset?"
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

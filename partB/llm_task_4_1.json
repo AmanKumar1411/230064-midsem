@@ -1,0 +1,43 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 4.1",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Draft report outline and structure for Part B submission",
+      "prompt": "Create a 4-page report outline for the DPM reproduction study. Include sections: abstract, introduction, methodology, experiments, results, discussion, conclusion. Specify which plots and tables to include from each task.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Restructured sections to align with task numbering (1.x, 2.x, 3.x). Added explicit references to saved figures in results/. Trimmed abstract to focus on key findings."
+    }
+  ],
+
+  "top_5_prompts": [
+    "Create a report outline for a DPM reproduction study with ablation and failure analysis.",
+    "How should I structure the methodology section to cover both the paper's method and our simplified version?",
+    "What tables and figures should a DPM reproduction report include?",
+    "How do I write a concise discussion comparing toy-dataset results with PASCAL VOC findings?",
+    "What should the conclusion section emphasize for a partial reproduction of DPM?"
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}

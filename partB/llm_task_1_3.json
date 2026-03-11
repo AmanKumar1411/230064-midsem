@@ -1,0 +1,43 @@
+{
+  "student_metadata": {
+    "name": "Aman Kumar",
+    "roll_number": "230064",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B"
+  },
+
+  "task_tag": "Task 1.3",
+
+  "llm_tools_used": [
+    {
+      "tool_name": "GitHub Copilot",
+      "model": "Claude",
+      "provider": "Anthropic (via GitHub Copilot)"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "purpose": "Identify baseline method, its limitations, and how DPM improves upon it",
+      "prompt": "For the DPM paper (Felzenszwalb et al. 2010): identify the baseline method compared against, its limitation, how DPM solves it, and a scenario where DPM might still fail.",
+      "llm_response_used": "Yes",
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the baseline description to include additional references (Maji et al. 2008). Added quantitative improvement numbers from Table 3. Refined the failure scenario to focus on amorphous objects."
+    }
+  ],
+
+  "top_5_prompts": [
+    "What is the primary baseline the DPM paper compares against in Section 6?",
+    "What are the limitations of the Dalal and Triggs rigid HOG detector?",
+    "How do deformable parts and mixture components address rigid template limitations?",
+    "Give a scenario where the DPM would still fail despite improvements over the baseline.",
+    "What quantitative improvement does the DPM show over root-only models in Table 3?"
+  ],
+
+  "student_declaration": {
+    "statement": "I confirm this file accurately reports LLM usage for this task.",
+    "signature": "Aman Kumar"
+  }
+}
